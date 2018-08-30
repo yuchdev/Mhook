@@ -142,7 +142,7 @@ int main(int argc, char* argv[])
 		}
 
 		// Remove the hook
-		Mhook_Unhook((PVOID*)&TrueNtOpenProcess/*, HookNtOpenProcess*/);
+		Mhook_Unhook((PVOID*)&TrueNtOpenProcess);
 	}
 
 	// Call OpenProces again - this time there won't be a redirection as
